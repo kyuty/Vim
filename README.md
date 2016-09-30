@@ -1,4 +1,5 @@
 这是我copy的. 
+
 原文链接是: https://github.com/hominlinx/vim
 
 原文链接是: https://github.com/hominlinx/vim
@@ -7,6 +8,7 @@
 
 (我只是在他的基础上添加了vim-cpp-auto-include)
 
+===================================================================================
 
 #hominlinx's Vim config#
 
