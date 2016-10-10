@@ -32,10 +32,10 @@ endif
 
 let g:loaded_cpp_auto_include = "true"
 
-autocmd BufWritePre /tmp/**.cc :ruby CppAutoInclude::process
-autocmd BufWritePre /tmp/**.cpp :ruby CppAutoInclude::process
-autocmd BufWritePre /home/wangdong/cpp/**.cpp :ruby CppAutoInclude::process
-
+"autocmd BufWritePre /tmp/**.cc :ruby CppAutoInclude::process
+"autocmd BufWritePre /tmp/**.cpp :ruby CppAutoInclude::process
+"autocmd BufWritePre /home/wangdong/cpp/*.cpp :ruby CppAutoInclude::process
+"autocmd BufWritePre *.cpp :ruby CppAutoInclude::process
 ruby << EOF
 module VIM
   # make VIM's builtin VIM ruby module a little easier to use

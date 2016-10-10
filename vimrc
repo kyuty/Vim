@@ -18,3 +18,13 @@ exec "w"
 exec "!g++ % -o %<"
 exec "! ./%<"
 endfunc
+
+map <F6> :call CompileRunGpp1()<cr>
+func! CompileRunGpp1()
+exec "w"
+exec "!g++ % -o %<"
+exec "! %<"
+endfunc
+
+" 粘贴时关闭格式的影响
+map <F10> :set paste<CR>
