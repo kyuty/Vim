@@ -15,16 +15,12 @@ source ~/.vim/config/mappings.vim
 map <f5> :call CompileRunGpp()<cr>
 func! CompileRunGpp()
 exec "w"
-exec "!g++ % -o %<"
-exec "! ./%<"
+exec "!g++ % -o a.out -std=c++11"
+exec "! ./a.out"
+"exec "!g++ % -o %<"
+"exec "! ./%<"
 endfunc
 
-map <F6> :call CompileRunGpp1()<cr>
-func! CompileRunGpp1()
-exec "w"
-exec "!g++ % -o %<"
-exec "! %<"
-endfunc
-
+set paste
 " 粘贴时关闭格式的影响
-map <F10> :set paste<CR>
+"map <F10> :set paste<CR>
